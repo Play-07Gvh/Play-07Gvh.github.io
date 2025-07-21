@@ -8,15 +8,6 @@ const menuItemsList=document.querySelector("nav ul");
 const hamBtn = document.querySelector("#hamIcon");
 hamBtn.addEventListener("click",toggleMenus);
 
-/*find references to all the buttons and ball */
-const leftBtn = document.querySelector("#leftBtn");
-const rightBtn = document.querySelector("#rightBtn");
-const upBtn = document.querySelector("#upBtn");
-const downBtn = document.querySelector("#downBtn");
-const resetBtn = document.querySelector("#resetBtn");
-const ball = document.querySelector("#ball");
-var ballX = ballY = 0; //assign initial position of ball
-
 //select all subtopic pages
 function hideall(){ //function to hide all pages
     for(let onepage of allpages){ //go through all subtopic pages
@@ -47,3 +38,12 @@ hamBtn.innerHTML="Close Menu"; //change button text to chose menu
 hamBtn.innerHTML="Open Menu"; //change button text open menu
 }
 }
+
+const heightOutput = document.querySelector("#height");
+const widthOutput = document.querySelector("#width");
+function reportWindowSize() {
+heightOutput.textContent = window.innerHeight;
+widthOutput.textContent = window.innerWidth;
+}
+reportWindowSize();
+window.addEventListener("resize",reportWindowSize);//when resize, update report
