@@ -17,14 +17,3 @@ nav ul{display:none;}
 }
 /*to unhide menu items*/
 .menuShow{display:block;}
-
-#ball {
-background: cyan;
-width: 100px;
-height: 100px;
-border-radius: 50%;
-position: relative;
-display: flex;
-justify-content: center;
-align-items: center;
-}
