@@ -18,6 +18,11 @@ nav ul{display:none;}
 /*to unhide menu items*/
 .menuShow{display:block;}
 
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 body
 {
     background-image: url('Images/Background.png');
@@ -34,3 +39,39 @@ nav
 {
     text-align: center;
 }
+h2
+{
+    text-align: center;
+}
+
+#BronzeAge
+{
+    background-color: #cd7f32;
+}
+
+#SilverAge
+{
+     background-color: silver;
+}
+
+#GoldAge
+{
+    background-color: gold;
+}
+
+section div
+{
+    margin: 0 auto;
+    align-items: center;
+    width: 90%;
+}
+
+/*
+For the page sliding in from above and sliding out from below
+Does not work most likely due to display:none and display:block
+*/
+/* .page 
+{
+    transition:transform 0.2s ease-out;W
+    transform:translateY(100%);
+} */

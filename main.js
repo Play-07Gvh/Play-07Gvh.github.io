@@ -8,12 +8,14 @@ const menuItemsList=document.querySelector("nav ul");
 const hamBtn = document.querySelector("#hamIcon");
 hamBtn.addEventListener("click",toggleMenus);
 
-//select all subtopic pages
+// select all subtopic pages
 function hideall(){ //function to hide all pages
     for(let onepage of allpages){ //go through all subtopic pages
+        onepage.style.height="0vh";
         onepage.style.display="none"; //hide it
     }
 }
+
 function show(pgno) // function to show selected page no
 {
     //select the page based on the parameter passed in
@@ -28,12 +30,13 @@ function show(pgno) // function to show selected page no
     hideall();
     onepage.style.display="block";
 }
+
 /*Listen for clicks on the buttons, assign anonymous eventhandler functions to call show function*/
 page1btn.addEventListener("click", function(){show(1)});
 page2btn.addEventListener("click", function(){show(2)});
 page3btn.addEventListener("click", function(){show(3)});
 hideall();
-
+W
 function toggleMenus()
 {
   //if menuItemsList dont have the class "menuShow", add it, else remove it
@@ -54,3 +57,25 @@ hamBtn.innerHTML="Open Menu"; //change button text open menu
 // }
 // reportWindowSize();
 // window.addEventListener("resize",reportWindowSize);//when resize, update report
+
+// Teacher's Method
+//select all subtopic pages
+// function hideall(){ //function to hide all pages
+//     for(let onepage of allpages){ //go through all subtopic pages
+//         onepage.style.display="none"; //hide it
+//     }
+// }
+// function show(pgno) // function to show selected page no
+// {
+//     //select the page based on the parameter passed in
+//     let onepage=document.querySelector("#page"+pgno);
+//     console.log(onepage.style.display);
+//     if (onepage.style.display == "block")
+//     {
+//         hideall();
+//         onepage.style.display="none";
+//         return;
+//     }
+//     hideall();
+//     onepage.style.display="block";
+// }
