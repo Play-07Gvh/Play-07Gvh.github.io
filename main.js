@@ -16,9 +16,16 @@ function hideall(){ //function to hide all pages
 }
 function show(pgno) // function to show selected page no
 {
-    hideall();
     //select the page based on the parameter passed in
     let onepage=document.querySelector("#page"+pgno);
+    console.log(onepage.style.display);
+    if (onepage.style.display == "block")
+    {
+        hideall();
+        onepage.style.display="none";
+        return;
+    }
+    hideall();
     onepage.style.display="block";
 }
 /*Listen for clicks on the buttons, assign anonymous eventhandler functions to call show function*/
@@ -39,11 +46,11 @@ hamBtn.innerHTML="Open Menu"; //change button text open menu
 }
 }
 
-const heightOutput = document.querySelector("#height");
-const widthOutput = document.querySelector("#width");
-function reportWindowSize() {
-heightOutput.textContent = window.innerHeight;
-widthOutput.textContent = window.innerWidth;
-}
-reportWindowSize();
-window.addEventListener("resize",reportWindowSize);//when resize, update report
+// const heightOutput = document.querySelector("#height");
+// const widthOutput = document.querySelector("#width");
+// function reportWindowSize() {
+// heightOutput.textContent = window.innerHeight;
+// widthOutput.textContent = window.innerWidth;
+// }
+// reportWindowSize();
+// window.addEventListener("resize",reportWindowSize);//when resize, update report
