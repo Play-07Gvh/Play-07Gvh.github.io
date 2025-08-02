@@ -11,7 +11,6 @@ hamBtn.addEventListener("click",toggleMenus);
 // select all subtopic pages
 function hideall(){ //function to hide all pages
     for(let onepage of allpages){ //go through all subtopic pages
-        onepage.style.height="0vh";
         onepage.style.display="none"; //hide it
     }
 }
@@ -36,7 +35,7 @@ page1btn.addEventListener("click", function(){show(1)});
 page2btn.addEventListener("click", function(){show(2)});
 page3btn.addEventListener("click", function(){show(3)});
 hideall();
-W
+
 function toggleMenus()
 {
   //if menuItemsList dont have the class "menuShow", add it, else remove it

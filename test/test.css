@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.drawer {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    color: white;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+    transition: left 0.3s ease;
+}
+
+.drawer-content {
+    padding: 20px;
+}
+
+.drawer-content nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.drawer-content nav ul li {
+    margin: 15px 0;
+}
+
+.drawer-content nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.open-drawer,
+.close-drawer {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.open-drawer:hover,
+.close-drawer:hover {
+    background-color: #555;
+}
