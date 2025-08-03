@@ -67,20 +67,20 @@ function showsub(pg)
 }
 
 /*Listen for clicks on the buttons, assign anonymous eventhandler functions to call show function*/
-page1btn.addEventListener("click", function(){show(1)});
-page2btn.addEventListener("click", function(){show(2)});
-page3btn.addEventListener("click", function(){show(3)});
+page1btn.addEventListener("click", function(){show(1);});
+page2btn.addEventListener("click", function(){show(2);});
+page3btn.addEventListener("click", function(){show(3);});
 
 hideallSubpages();
 hideall();
 
-forgingbtn.addEventListener("click",function(){showsub("Forging")});
-drawingbtn.addEventListener("click",function(){showsub("Drawing")});
-bendingbtn.addEventListener("click",function(){showsub("Bending")});
-upsettingbtn.addEventListener("click",function(){showsub("Upsetting")});
-punchingbtn.addEventListener("click",function(){showsub("Punching")});
-weldingbtn.addEventListener("click",function(){showsub("Welding")});
-finishingbtn.addEventListener("click",function(){showsub("Finishing")});
+forgingbtn.addEventListener("click",function(){showsub("Forging");});
+drawingbtn.addEventListener("click",function(){showsub("Drawing");});
+bendingbtn.addEventListener("click",function(){showsub("Bending");});
+upsettingbtn.addEventListener("click",function(){showsub("Upsetting");});
+punchingbtn.addEventListener("click",function(){showsub("Punching");});
+weldingbtn.addEventListener("click",function(){showsub("Welding");});
+finishingbtn.addEventListener("click",function(){showsub("Finishing");});
 
 
 function toggleMenus()
@@ -119,4 +119,4 @@ function HammerSmack()
     progressBar.style.width = progress + "%"; // Increase the display
 }
 
-hammerbtn.addEventListener("click", function(){HammerSmack()});
+hammerbtn.addEventListener("click", function(){HammerSmack();});
