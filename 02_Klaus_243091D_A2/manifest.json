@@ -1,0 +1,15 @@
+{ 
+    "name": "WebDev Assignment 02",
+    "short_name": "02A",
+    "start_url": "index.html",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#00FF00",
+    "icons": [
+        {   
+            "src": "Images/icons8-blacksmith-50.png",
+            "sizes": "64x64",
+            "type": "image/png"
+        }
+    ]
+}
